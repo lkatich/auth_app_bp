@@ -1,0 +1,10 @@
+flask
+flask_redis
+flask_restx
+flask_sqlalchemy
+flask_httpauth
+flask_migrate
+pyjwt
+psycopg2
+passlib
+redis
