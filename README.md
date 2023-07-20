@@ -16,12 +16,7 @@ Docker
 
 
 
-To start working with the app, clone the repository, create python virtual environment and install all the requirements
-```
-[venv] pip install -r requirements.txt
-```
-
-After the requirements are installed, run docker-compose to start the services:
+To start working with the app, run docker-compose to start the services:
 
 ```
 docker-compose up

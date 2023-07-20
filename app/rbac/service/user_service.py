@@ -4,6 +4,7 @@ import datetime
 from app.instances import db
 from app.models import User
 from flask_restx import abort
+from flask import g
 
 
 def save_new_user(data):
