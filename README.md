@@ -19,7 +19,7 @@ Docker
 To start working with the app, run docker-compose to start the services:
 
 ```
-docker-compose up
+docker-compose up --build
 ```
 
 To start testing the app - create first user by send POST request to http://127.0.0.1:5001/api/v1/rbac/user with the payload like:
