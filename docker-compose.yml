@@ -10,8 +10,10 @@ services:
         env_file:
             - env.list
         depends_on:
-            - db
-            - redis
+            db:
+                condition: service_started
+            redis:
+                condition: service_started
     db:
         image: postgres
         environment:
