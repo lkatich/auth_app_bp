@@ -15,7 +15,6 @@ user_input_model = UserDto.input_model
 class User(Resource):
     @api.expect(user_input_model, validate=True)
     @api.response(201, 'User successfully created.')
-    @api.marshal_with(user)
     def post(self):
         """Create a new User """
         data = request.json
