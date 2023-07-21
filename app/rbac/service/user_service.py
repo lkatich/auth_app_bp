@@ -19,11 +19,15 @@ def save_new_user(data):
         )
         db.session.add(new_user)
         db.session.commit()
-        return new_user
+        response_object = {
+            'status': 'OK',
+            'message': f'User {new_user.username} has been successfully created',
+        }
+        return response_object, 200
     else:
         response_object = {
             'status': 'error',
-            'message': 'User already exists. Please Log in.',
+            'message': f'User with {new_user.email} already exists. Please Log in.',
         }
         return response_object, 409
 
