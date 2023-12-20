@@ -21,7 +21,7 @@ class User(db.Model):
     is_active = Column('is_active', Boolean, default=True)
 
     def __str__(self):
-        return f'{self.username} ({self.role})'
+        return f'{self.username}'
 
     @hybrid_property
     def email(self):
