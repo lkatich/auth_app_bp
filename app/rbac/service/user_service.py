@@ -27,7 +27,7 @@ def save_new_user(data):
     else:
         response_object = {
             'status': 'error',
-            'message': f'User with {new_user.email} already exists. Please Log in.',
+            'message': f'User with {user.email} already exists. Please Log in.',
         }
         return response_object, 409
 
